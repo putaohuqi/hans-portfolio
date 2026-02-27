@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hans Chen — CS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="app">
+
+    
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-mark">▲</div>
+        <span class="logo-text">PORTFOLIO</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <p class="nav-label">MENU</p>
+        <ul>
+          <li>
+            <a href="#home" class="nav-link active" data-section="home">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+              <span>I Love You.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+              <span>Wiped Out!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-section="skills">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              <span>Cry Baby</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>Sweater Weather</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-library">
+        <p class="nav-label">YOUR LIBRARY</p>
+        <ul class="library-list">
+          <li class="library-item">
+            <div class="lib-art lib-art-1"></div>
+            <div class="lib-info">
+              <span class="lib-title">Project One</span>
+              <span class="lib-sub">Stack · Stack</span>
+            </div>
+          </li>
+          <li class="library-item">
+            <div class="lib-art lib-art-2"></div>
+            <div class="lib-info">
+              <span class="lib-title">Project Two</span>
+              <span class="lib-sub">Stack · Stack</span>
+            </div>
+          </li>
+          <li class="library-item">
+            <div class="lib-art lib-art-3"></div>
+            <div class="lib-info">
+              <span class="lib-title">Project Three</span>
+              <span class="lib-sub">Stack · Stack</span>
+            </div>
+          </li>
+          <li class="library-item">
+            <div class="lib-art lib-art-4"></div>
+            <div class="lib-info">
+              <span class="lib-title">Project Four</span>
+              <span class="lib-sub">Stack · Stack</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    
+    <div class="main-wrapper">
+
+      
+      <header class="topbar">
+        <div class="topbar-nav">
+          <button class="topbar-btn" id="btn-back" aria-label="back">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+          </button>
+          <button class="topbar-btn" id="btn-fwd" aria-label="forward">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+          </button>
+        </div>
+        <div class="topbar-center" id="topbar-section-label">CS Portfolio</div>
+        <div class="topbar-right">
+          <a href="#contact" class="topbar-cta">Hire Me</a>
+        </div>
+      </header>
+
+      
+      <main class="content" id="main-content">
+
+        
+        <section id="home" class="section hero-section">
+          <div class="hero-banner">
+            <div class="hero-album-art">
+              <div class="album-geo">
+                <div class="geo-ring ring-1"></div>
+                <div class="geo-ring ring-2"></div>
+                <div class="geo-ring ring-3"></div>
+                <div class="geo-center"></div>
+                <div class="geo-line line-v"></div>
+                <div class="geo-line line-h"></div>
+              </div>
+              <div class="now-playing-badge">
+                <span class="pulse-dot"></span>
+                NOW PLAYING
+              </div>
+            </div>
+            <div class="hero-text">
+              <p class="hero-eyebrow">TRACK 01 · CS PORTFOLIO</p>
+              <h1 class="hero-name" data-text="Hans Chen">Hans Chen</h1>
+              <p class="hero-role">Computer Science Student &amp; Developer</p>
+              <p class="hero-tagline">
+                "dashboard hula girl"
+              </p>
+              <div class="hero-meta">
+                <span class="hero-tag">Senior · UBC</span>
+                <span class="hero-tag">Open to internships</span>
+                <span class="hero-tag">Building in public</span>
+              </div>
+              <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-ghost">Get in Touch</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="featured-tracks">
+            <p class="tracks-label">POPULAR</p>
+            <div class="track-list">
+              <div class="track-row track-header">
+                <span>#</span>
+                <span>TITLE</span>
+                <span>STACK</span>
+                <span>DURATION</span>
+              </div>
+              <div class="track-row" data-href="#projects">
+                <span class="track-num">1</span>
+                <div class="track-info">
+                  <div class="track-art lib-art-1"></div>
+                  <div>
+                    <span class="track-title">Project One</span>
+                    <span class="track-artist">Project type / category</span>
+                  </div>
+                </div>
+                <span class="track-stack">Stack · Stack</span>
+                <span class="track-dur">0:00</span>
+              </div>
+              <div class="track-row" data-href="#projects">
+                <span class="track-num">2</span>
+                <div class="track-info">
+                  <div class="track-art lib-art-2"></div>
+                  <div>
+                    <span class="track-title">Project Two</span>
+                    <span class="track-artist">Project type / category</span>
+                  </div>
+                </div>
+                <span class="track-stack">Stack · Stack</span>
+                <span class="track-dur">0:00</span>
+              </div>
+              <div class="track-row" data-href="#projects">
+                <span class="track-num">3</span>
+                <div class="track-info">
+                  <div class="track-art lib-art-3"></div>
+                  <div>
+                    <span class="track-title">Project Three</span>
+                    <span class="track-artist">Project type / category</span>
+                  </div>
+                </div>
+                <span class="track-stack">Stack · Stack</span>
+                <span class="track-dur">0:00</span>
+              </div>
+              <div class="track-row" data-href="#projects">
+                <span class="track-num">4</span>
+                <div class="track-info">
+                  <div class="track-art lib-art-4"></div>
+                  <div>
+                    <span class="track-title">Project Four</span>
+                    <span class="track-artist">Project type / category</span>
+                  </div>
+                </div>
+                <span class="track-stack">Stack · Stack</span>
+                <span class="track-dur">0:00</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="about" class="section about-section">
+          <div class="section-header">
+            <div class="section-album-tag">
+              <div class="tag-art about-art"></div>
+              <div>
+                <p class="tag-label">ALBUM</p>
+                <p class="tag-name">I Love You.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">The story so far</p>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia consequuntur magni dolores eos qui ratione sequi nesciunt.
+              </p>
+              <div class="about-quote">
+                <span class="quote-bar"></span>
+                <blockquote>"We need to cry.<br />And if we do, I know that would be alright."<br /><cite>— Cry Baby, The Neighbourhood</cite></blockquote>
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">X+</span>
+                <span class="stat-label">Years Coding</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">##</span>
+                <span class="stat-label">Projects Shipped</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">#</span>
+                <span class="stat-label">Hackathons Won</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Bugs Introduced</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <p class="timeline-label">DISCOGRAPHY / TIMELINE</p>
+            <div class="timeline-items">
+              <div class="tl-item">
+                <span class="tl-year">20XX</span>
+                <div class="tl-content">
+                  <strong>First Line of Code</strong>
+                  <p>Your origin story here.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">20XX</span>
+                <div class="tl-content">
+                  <strong>Started UBC CS</strong>
+                  <p>Your first year experience here.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">20XX</span>
+                <div class="tl-content">
+                  <strong>First Internship — Company Name</strong>
+                  <p>What you built and learned.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">20XX</span>
+                <div class="tl-content">
+                  <strong>Milestone</strong>
+                  <p>Award, project, contribution, etc.</p>
+                </div>
+              </div>
+              <div class="tl-item tl-current">
+                <span class="tl-year">NOW</span>
+                <div class="tl-content">
+                  <strong>Looking for Opportunities</strong>
+                  <p>What you're working toward.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="projects" class="section projects-section">
+          <div class="section-header">
+            <div class="section-album-tag">
+              <div class="tag-art projects-art"></div>
+              <div>
+                <p class="tag-label">ALBUM</p>
+                <p class="tag-name">Wiped Out!</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Every project is a B-side waiting to be heard</p>
+
+          <div class="projects-grid">
+
+            <div class="project-card featured-card">
+              <div class="project-art lib-art-1">
+                <div class="project-overlay">
+                  <button class="play-btn" aria-label="view project">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-badge">Featured</span>
+                <h3 class="project-title">Project Name</h3>
+                <p class="project-desc">
+                  Short description of what this project does, what problem it solves,
+                  and one notable technical achievement or metric worth highlighting.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Tech</span>
+                  <span class="tag">Stack</span>
+                  <span class="tag">Here</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                  </a>
+                  <a href="#" class="project-link project-link-primary">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art lib-art-2">
+                <div class="project-overlay">
+                  <button class="play-btn" aria-label="view project">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-badge">Type</span>
+                <h3 class="project-title">Project Name</h3>
+                <p class="project-desc">
+                  Short description of what this project does, what problem it solves,
+                  and one notable technical achievement or metric worth highlighting.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Tech</span>
+                  <span class="tag">Stack</span>
+                  <span class="tag">Here</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                  <a href="#" class="project-link project-link-primary">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art lib-art-3">
+                <div class="project-overlay">
+                  <button class="play-btn" aria-label="view project">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-badge">Type</span>
+                <h3 class="project-title">Project Name</h3>
+                <p class="project-desc">
+                  Short description of what this project does, what problem it solves,
+                  and one notable technical achievement or metric worth highlighting.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Tech</span>
+                  <span class="tag">Stack</span>
+                  <span class="tag">Here</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                  <a href="#" class="project-link project-link-primary">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-art lib-art-4">
+                <div class="project-overlay">
+                  <button class="play-btn" aria-label="view project">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-badge">Type</span>
+                <h3 class="project-title">Project Name</h3>
+                <p class="project-desc">
+                  Short description of what this project does, what problem it solves,
+                  and one notable technical achievement or metric worth highlighting.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Tech</span>
+                  <span class="tag">Stack</span>
+                  <span class="tag">Here</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        
+        <section id="skills" class="section skills-section">
+          <div class="section-header">
+            <div class="section-album-tag">
+              <div class="tag-art skills-art"></div>
+              <div>
+                <p class="tag-label">TRACK 03</p>
+                <p class="tag-name">Cry Baby</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">What's in the setlist</p>
+
+          <div class="skills-layout">
+            <div class="skills-col">
+              <p class="skill-group-label">LANGUAGES</p>
+              <div class="skill-bars">
+                <div class="skill-bar-item">
+                  <div class="skill-bar-meta">
+                    <span>Python</span><span>95%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" style="--pct: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-meta">
+                    <span>JavaScript / TypeScript</span><span>90%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" style="--pct: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-meta">
+                    <span>Go</span><span>75%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" style="--pct: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-meta">
+                    <span>Java / C++</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar-track">
+                    <div class="skill-bar-fill" style="--pct: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-col">
+              <p class="skill-group-label">FRAMEWORKS &amp; TOOLS</p>
+              <div class="skill-pills">
+                <span class="pill">React</span>
+                <span class="pill">Next.js</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">Express</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">PyTorch</span>
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">Redis</span>
+                <span class="pill">Docker</span>
+                <span class="pill">AWS</span>
+                <span class="pill">Git</span>
+                <span class="pill">Linux</span>
+                <span class="pill">GraphQL</span>
+                <span class="pill">Socket.io</span>
+              </div>
+
+              <p class="skill-group-label" style="margin-top: 2rem;">CURRENTLY LEARNING</p>
+              <div class="skill-pills">
+                <span class="pill pill-learning">Rust</span>
+                <span class="pill pill-learning">Kubernetes</span>
+                <span class="pill pill-learning">LLM Fine-tuning</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="contact" class="section contact-section">
+          <div class="section-header">
+            <div class="section-album-tag">
+              <div class="tag-art contact-art"></div>
+              <div>
+                <p class="tag-label">TRACK 01</p>
+                <p class="tag-name">Sweater Weather</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            "All I am is a man, I want the world in my hands."<br />
+            <cite>— Sweater Weather</cite>
+          </p>
+
+          <div class="contact-layout">
+            <div class="contact-links">
+              <a href="mailto:name@company.com" class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-platform">Email</span>
+                  <span class="contact-handle">name@company.com</span>
+                </div>
+                <svg class="contact-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              </a>
+
+              <a href="https://github.com" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-platform">GitHub</span>
+                  <span class="contact-handle">@username</span>
+                </div>
+                <svg class="contact-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-platform">LinkedIn</span>
+                  <span class="contact-handle">linkedin.com/in/name</span>
+                </div>
+                <svg class="contact-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              </a>
+
+              <a href="javascript:void(0)" class="contact-card" id="resume-open-btn">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-platform">Resume</span>
+                  <span class="contact-handle">Preview &amp; Download</span>
+                </div>
+                <svg class="contact-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              </a>
+            </div>
+
+            <div class="contact-form-wrap">
+              <p class="form-label">SEND A MESSAGE</p>
+              <form class="contact-form" onsubmit="handleForm(event)">
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input id="fname" type="text" placeholder="Your name" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input id="femail" type="email" placeholder="you@example.com" autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="fmsg">Message</label>
+                  <textarea id="fmsg" rows="4" placeholder="Let's build something..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary form-submit">Send It</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>Built with black coffee &amp; The Neighbourhood on repeat.</p>
+          <p class="footer-sub">© 2025 Hans Chen · CS Portfolio</p>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-label="Resume Preview">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-label">RESUME</span>
+          <h2 class="modal-title">Hans Chen</h2>
+        </div>
+        <div class="modal-actions">
+          <a href="resume.pdf" download="HansChen_Resume.pdf" class="btn-primary modal-download">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download PDF
+          </a>
+          <button class="modal-close" id="resume-close-btn" aria-label="close">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="resume-preview">
+
+          
+          <div class="rv-header">
+            <div class="rv-name-block">
+              <h1 class="rv-name">Hans Chen</h1>
+              <p class="rv-role">Computer Science Student</p>
+            </div>
+            <div class="rv-contact-row">
+              <span>name@company.com</span>
+              <span>·</span>
+              <span>github.com/username</span>
+              <span>·</span>
+              <span>linkedin.com/in/name</span>
+              <span>·</span>
+              <span>Vancouver, BC</span>
+            </div>
+          </div>
+
+          
+          <div class="rv-section">
+            <h3 class="rv-section-title">Education</h3>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <div>
+                  <strong>University of British Columbia</strong>
+                  <span class="rv-detail">Bachelor of Science, Computer Science</span>
+                </div>
+                <span class="rv-date">Sep 2021 — May 2025</span>
+              </div>
+              <ul class="rv-list">
+                <li>GPA: X.X / 4.0 · Add awards or honours here</li>
+                <li>Relevant coursework: Course One, Course Two, Course Three</li>
+              </ul>
+            </div>
+          </div>
+
+          
+          <div class="rv-section">
+            <h3 class="rv-section-title">Experience</h3>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <div>
+                  <strong>Software Engineering Intern</strong>
+                  <span class="rv-detail">Company Name · Vancouver, BC</span>
+                </div>
+                <span class="rv-date">May 2023 — Aug 2023</span>
+              </div>
+              <ul class="rv-list">
+                <li>What you built and what impact it had (add a metric if you can)</li>
+                <li>Another key responsibility or achievement here</li>
+                <li>Collaboration, tools, or process worth mentioning</li>
+              </ul>
+            </div>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <div>
+                  <strong>Role Title</strong>
+                  <span class="rv-detail">Company / Project · Location</span>
+                </div>
+                <span class="rv-date">Month 20XX — Present</span>
+              </div>
+              <ul class="rv-list">
+                <li>What you built and what impact it had (add a metric if you can)</li>
+                <li>Another key responsibility or achievement here</li>
+              </ul>
+            </div>
+          </div>
+
+          
+          <div class="rv-section">
+            <h3 class="rv-section-title">Projects</h3>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <strong>Project One</strong>
+                <span class="rv-stack">Tech · Stack · Here</span>
+              </div>
+              <ul class="rv-list">
+                <li>One sentence on what it does and a notable result or metric</li>
+              </ul>
+            </div>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <strong>Project Two</strong>
+                <span class="rv-stack">Tech · Stack · Here</span>
+              </div>
+              <ul class="rv-list">
+                <li>One sentence on what it does and a notable result or metric</li>
+              </ul>
+            </div>
+            <div class="rv-item">
+              <div class="rv-item-header">
+                <strong>Project Three</strong>
+                <span class="rv-stack">Tech · Stack · Here</span>
+              </div>
+              <ul class="rv-list">
+                <li>One sentence on what it does and a notable result or metric</li>
+              </ul>
+            </div>
+          </div>
+
+          
+          <div class="rv-section">
+            <h3 class="rv-section-title">Skills</h3>
+            <div class="rv-skills-grid">
+              <div><span class="rv-skill-label">Languages</span><span>Python, JavaScript, TypeScript, Go, Java, C++</span></div>
+              <div><span class="rv-skill-label">Frameworks</span><span>React, Next.js, Node.js, Express, FastAPI, PyTorch</span></div>
+              <div><span class="rv-skill-label">Tools</span><span>Git, Docker, AWS, PostgreSQL, Redis, Linux</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="player-bar">
+    <div class="player-left">
+      <div class="player-art now-art"></div>
+      <div class="player-track-info">
+        <span class="player-track-name" id="player-track">Hans Chen</span>
+        <span class="player-track-sub" id="player-sub">CS Portfolio · Open to Work</span>
+      </div>
+      <button class="player-heart" id="player-heart" aria-label="like">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+    </div>
+
+    <div class="player-center">
+      <div class="player-controls">
+        <button class="ctrl-btn" aria-label="shuffle">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        </button>
+        <button class="ctrl-btn" aria-label="prev">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+        </button>
+        <button class="ctrl-btn ctrl-play" id="play-btn" aria-label="play/pause">
+          <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </button>
+        <button class="ctrl-btn" aria-label="next">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+        </button>
+        <button class="ctrl-btn" aria-label="repeat">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+        </button>
+      </div>
+      <div class="player-progress">
+        <span class="prog-time" id="prog-current">0:00</span>
+        <div class="prog-track" id="prog-track">
+          <div class="prog-fill" id="prog-fill"></div>
+          <div class="prog-thumb" id="prog-thumb"></div>
+        </div>
+        <span class="prog-time" id="prog-total">4:33</span>
+      </div>
+    </div>
+
+    <div class="player-right">
+      <button class="ctrl-btn" aria-label="queue">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3V8h3V6h-5z"/></svg>
+      </button>
+      <div class="player-volume">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        <input type="range" class="volume-slider" min="0" max="100" value="75" aria-label="volume" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
